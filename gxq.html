@@ -11,12 +11,47 @@
 </head>
 <body>
 
+
+<!--gxq model start-->
+<style type="text/css">
+.J_mod_modal {position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 999; } .J_mod_modal .modal_bg {background-color: rgba(0,0,0,0.5); position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1000; } .J_mod_modal .modal_wrap {background-color: #fff; border-radius: 5px; position: fixed; top: 50%; right: 25px; left: 25px; z-index: 1001; -webkit-transform: translate(0,-50%); transform: translate(0,-50%); } .J_mod_modal .modal_inner {padding: 10px; } .J_mod_modal .modal_bd {padding: 10px 0; } .J_mod_modal .msg_1 {height: auto; word-break: break-all; word-wrap: break-word; text-align: center; line-height: 20px; font-size: 16px; color: #333; } .space_10 {height: 10px; } .J_mod_modal .modal_control {margin-top: 10px; } .J_mod_modal .control_inner_two {} .J_mod_modal .control_inner_two .uc_btn_base:first-child {float: left; width: 48%; } .J_mod_modal .uc_btn_hollow_gray {border-color: #e6e6e6; background-color: transparent; color: #5f5f5f; } .J_mod_modal .uc_btn_normal {width: 100%; height: 42px; line-height: 42px; font-size: 18px; } .J_mod_modal .uc_btn_base {display: inline-block; border-width: 1px; border-style: solid; border-radius: 5px; text-align: center;margin-bottom: 10px; } .J_mod_modal .control_inner_two .uc_btn_base:last-child {float: right; width: 48%; } .J_mod_modal .uc_btn_primary {border-color: #41CFC7; background-color: #41CFC7; color: #fff; }
+</style>
+
+<div class="J_mod_modal" id="J_mod_modal" style="display: block;">
+    <div class="modal_bg"></div>
+    <div class="modal_wrap">
+        <div class="modal_inner">
+            <div class="modal_bd">
+                <div class="msg_1" id="J_mod_modal_title">确认本次操作吗？</div>
+
+                <!-- <div class="space_10"></div> -->
+                <div class="msg_2" id="J_mod_modal_detail" style="display:block;">
+                    <div class="line"></div>
+                </div>
+                <div class="space_10"></div>
+
+                <div class="modal_control">
+                    <div class="control_inner_two clearfix">
+                        <a href="javascript:;" class="uc_btn_base uc_btn_normal uc_btn_hollow_gray" id="J_mod_modal_btn_cancle">取消</a>
+                        <a href="javascript:;" class="uc_btn_base uc_btn_normal uc_btn_primary" id="J_mod_modal_btn_confirm">确认</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--gxq model end-->
+
+
 <script src="./zepto.js?v=1.0.12016012501"></script>
 <script src="./gxqutil.js"></script>
 
 <script type="text/javascript">
-    GxqToast = new GxqToast();
-    GxqToast.show("ddd",1500);
+    // GxqToast = new GxqToast();
+    // GxqToast.show("温馨提示",1500);
+
+    // GxqLoadingToast = new GxqLoadingToast();
+    // GxqLoadingToast.show("加载中");
 </script>
 </body>
 </html>
