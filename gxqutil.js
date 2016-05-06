@@ -21,13 +21,13 @@ GxqToast.prototype = {
         this.createDom();
     },
     createDom: function() {
-        var body = jQuery("body");
-        var componment = jQuery("#toast");
+        var body = $("body");
+        var componment = $("#toast");
 
         if (componment.length === 0) {
             body.append(HTMLS.toast);
         }
-        this.set("toast", jQuery("#J_gxq_toast"));
+        this.set("toast", $("#J_gxq_toast"));
     },
     show: function(str,expiredTime) {
         var _this = this;
@@ -38,11 +38,11 @@ GxqToast.prototype = {
         toast.show();
         if (expiredTime) {
             console.log(expiredTime);
-            setTimeout(_this.hide(),expiredTime);
+            setTimeout(_this.hideToast('t'),expiredTime);
         }
     },
-    hide: function() {
-        var toast = this.get("toast");
+    hideToast: function(t) {
+        // var toast = that.get("toast");
         console.log('eeee');
         // toast.find(".J_gxq_toast_tip").html("");
         // toast.hide();
